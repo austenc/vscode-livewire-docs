@@ -1,0 +1,143 @@
+{
+    "name": "livewire-docs",
+    "displayName": "Livewire Docs",
+    "description": "Easily access the Livewire Laravel documentation",
+    "version": "0.1.0",
+    "icon": "img/icon.png",
+    "publisher": "austenc",
+    "repository": "https://github.com/austenc/vscode-livewire-docs",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.livewireDocsApi",
+        "onCommand:extension.livewireDocsComponentBasics",
+        "onCommand:extension.livewireDocsCssTransitions",
+        "onCommand:extension.livewireDocsCustomJavascript",
+        "onCommand:extension.livewireDocsDataBinding",
+        "onCommand:extension.livewireDocsEvents",
+        "onCommand:extension.livewireDocsInputValidation",
+        "onCommand:extension.livewireDocsInstallation",
+        "onCommand:extension.livewireDocsLifecycleHooks",
+        "onCommand:extension.livewireDocsLoadingStates",
+        "onCommand:extension.livewireDocsNestingComponents",
+        "onCommand:extension.livewireDocsQuickstart",
+        "onCommand:extension.livewireDocsRedirecting",
+        "onCommand:extension.livewireDocsRenderingComponents",
+        "onCommand:extension.livewireDocsSecurity",
+        "onCommand:extension.livewireDocsSpaMode",
+        "onCommand:extension.livewireDocsTesting",
+        "onCommand:extension.livewireDocsTriggeringActions"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.livewireDocsApi",
+                "category": "Livewire Docs",
+                "title": "Api"
+            },
+            {
+                "command": "extension.livewireDocsComponentBasics",
+                "category": "Livewire Docs",
+                "title": "Component Basics"
+            },
+            {
+                "command": "extension.livewireDocsCssTransitions",
+                "category": "Livewire Docs",
+                "title": "Css Transitions"
+            },
+            {
+                "command": "extension.livewireDocsCustomJavascript",
+                "category": "Livewire Docs",
+                "title": "Custom Javascript"
+            },
+            {
+                "command": "extension.livewireDocsDataBinding",
+                "category": "Livewire Docs",
+                "title": "Data Binding"
+            },
+            {
+                "command": "extension.livewireDocsEvents",
+                "category": "Livewire Docs",
+                "title": "Events"
+            },
+            {
+                "command": "extension.livewireDocsInputValidation",
+                "category": "Livewire Docs",
+                "title": "Input Validation"
+            },
+            {
+                "command": "extension.livewireDocsInstallation",
+                "category": "Livewire Docs",
+                "title": "Installation"
+            },
+            {
+                "command": "extension.livewireDocsLifecycleHooks",
+                "category": "Livewire Docs",
+                "title": "Lifecycle Hooks"
+            },
+            {
+                "command": "extension.livewireDocsLoadingStates",
+                "category": "Livewire Docs",
+                "title": "Loading States"
+            },
+            {
+                "command": "extension.livewireDocsNestingComponents",
+                "category": "Livewire Docs",
+                "title": "Nesting Components"
+            },
+            {
+                "command": "extension.livewireDocsQuickstart",
+                "category": "Livewire Docs",
+                "title": "Quickstart"
+            },
+            {
+                "command": "extension.livewireDocsRedirecting",
+                "category": "Livewire Docs",
+                "title": "Redirecting"
+            },
+            {
+                "command": "extension.livewireDocsRenderingComponents",
+                "category": "Livewire Docs",
+                "title": "Rendering Components"
+            },
+            {
+                "command": "extension.livewireDocsSecurity",
+                "category": "Livewire Docs",
+                "title": "Security"
+            },
+            {
+                "command": "extension.livewireDocsSpaMode",
+                "category": "Livewire Docs",
+                "title": "Spa Mode"
+            },
+            {
+                "command": "extension.livewireDocsTesting",
+                "category": "Livewire Docs",
+                "title": "Testing"
+            },
+            {
+                "command": "extension.livewireDocsTriggeringActions",
+                "category": "Livewire Docs",
+                "title": "Triggering Actions"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.34"
+    }
+}
