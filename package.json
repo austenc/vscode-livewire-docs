@@ -13,57 +13,83 @@
         "Other"
     ],
     "activationEvents": [
+        "onCommand:extension.livewireDocsActions",
+        "onCommand:extension.livewireDocsAlpineJs",
         "onCommand:extension.livewireDocsApi",
-        "onCommand:extension.livewireDocsComponentBasics",
-        "onCommand:extension.livewireDocsCssTransitions",
-        "onCommand:extension.livewireDocsCustomJavascript",
-        "onCommand:extension.livewireDocsDataBinding",
+        "onCommand:extension.livewireDocsArtisanCommands",
+        "onCommand:extension.livewireDocsAuthorization",
+        "onCommand:extension.livewireDocsDeferLoading",
+        "onCommand:extension.livewireDocsDirtyStates",
         "onCommand:extension.livewireDocsEvents",
+        "onCommand:extension.livewireDocsFlashMessages",
         "onCommand:extension.livewireDocsInputValidation",
         "onCommand:extension.livewireDocsInstallation",
+        "onCommand:extension.livewireDocsLaravelEcho",
         "onCommand:extension.livewireDocsLifecycleHooks",
         "onCommand:extension.livewireDocsLoadingStates",
+        "onCommand:extension.livewireDocsMakingComponents",
         "onCommand:extension.livewireDocsNestingComponents",
+        "onCommand:extension.livewireDocsOfflineState",
+        "onCommand:extension.livewireDocsPackageDev",
+        "onCommand:extension.livewireDocsPagination",
+        "onCommand:extension.livewireDocsPolling",
+        "onCommand:extension.livewireDocsPrefetching",
+        "onCommand:extension.livewireDocsProperties",
         "onCommand:extension.livewireDocsQuickstart",
         "onCommand:extension.livewireDocsRedirecting",
         "onCommand:extension.livewireDocsRenderingComponents",
         "onCommand:extension.livewireDocsSecurity",
-        "onCommand:extension.livewireDocsSpaMode",
         "onCommand:extension.livewireDocsTesting",
-        "onCommand:extension.livewireDocsTriggeringActions"
+        "onCommand:extension.livewireDocsTroubleshooting",
+        "onCommand:extension.livewireDocsTurbolinks"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
+            {
+                "command": "extension.livewireDocsActions",
+                "category": "Livewire Docs",
+                "title": "Actions"
+            },
+            {
+                "command": "extension.livewireDocsAlpineJs",
+                "category": "Livewire Docs",
+                "title": "Alpine Js"
+            },
             {
                 "command": "extension.livewireDocsApi",
                 "category": "Livewire Docs",
                 "title": "Api"
             },
             {
-                "command": "extension.livewireDocsComponentBasics",
+                "command": "extension.livewireDocsArtisanCommands",
                 "category": "Livewire Docs",
-                "title": "Component Basics"
+                "title": "Artisan Commands"
             },
             {
-                "command": "extension.livewireDocsCssTransitions",
+                "command": "extension.livewireDocsAuthorization",
                 "category": "Livewire Docs",
-                "title": "Css Transitions"
+                "title": "Authorization"
             },
             {
-                "command": "extension.livewireDocsCustomJavascript",
+                "command": "extension.livewireDocsDeferLoading",
                 "category": "Livewire Docs",
-                "title": "Custom Javascript"
+                "title": "Defer Loading"
             },
             {
-                "command": "extension.livewireDocsDataBinding",
+                "command": "extension.livewireDocsDirtyStates",
                 "category": "Livewire Docs",
-                "title": "Data Binding"
+                "title": "Dirty States"
             },
             {
                 "command": "extension.livewireDocsEvents",
                 "category": "Livewire Docs",
                 "title": "Events"
+            },
+            {
+                "command": "extension.livewireDocsFlashMessages",
+                "category": "Livewire Docs",
+                "title": "Flash Messages"
             },
             {
                 "command": "extension.livewireDocsInputValidation",
@@ -76,6 +102,11 @@
                 "title": "Installation"
             },
             {
+                "command": "extension.livewireDocsLaravelEcho",
+                "category": "Livewire Docs",
+                "title": "Laravel Echo"
+            },
+            {
                 "command": "extension.livewireDocsLifecycleHooks",
                 "category": "Livewire Docs",
                 "title": "Lifecycle Hooks"
@@ -86,9 +117,44 @@
                 "title": "Loading States"
             },
             {
+                "command": "extension.livewireDocsMakingComponents",
+                "category": "Livewire Docs",
+                "title": "Making Components"
+            },
+            {
                 "command": "extension.livewireDocsNestingComponents",
                 "category": "Livewire Docs",
                 "title": "Nesting Components"
+            },
+            {
+                "command": "extension.livewireDocsOfflineState",
+                "category": "Livewire Docs",
+                "title": "Offline State"
+            },
+            {
+                "command": "extension.livewireDocsPackageDev",
+                "category": "Livewire Docs",
+                "title": "Package Dev"
+            },
+            {
+                "command": "extension.livewireDocsPagination",
+                "category": "Livewire Docs",
+                "title": "Pagination"
+            },
+            {
+                "command": "extension.livewireDocsPolling",
+                "category": "Livewire Docs",
+                "title": "Polling"
+            },
+            {
+                "command": "extension.livewireDocsPrefetching",
+                "category": "Livewire Docs",
+                "title": "Prefetching"
+            },
+            {
+                "command": "extension.livewireDocsProperties",
+                "category": "Livewire Docs",
+                "title": "Properties"
             },
             {
                 "command": "extension.livewireDocsQuickstart",
@@ -111,19 +177,19 @@
                 "title": "Security"
             },
             {
-                "command": "extension.livewireDocsSpaMode",
-                "category": "Livewire Docs",
-                "title": "Spa Mode"
-            },
-            {
                 "command": "extension.livewireDocsTesting",
                 "category": "Livewire Docs",
                 "title": "Testing"
             },
             {
-                "command": "extension.livewireDocsTriggeringActions",
+                "command": "extension.livewireDocsTroubleshooting",
                 "category": "Livewire Docs",
-                "title": "Triggering Actions"
+                "title": "Troubleshooting"
+            },
+            {
+                "command": "extension.livewireDocsTurbolinks",
+                "category": "Livewire Docs",
+                "title": "Turbolinks"
             }
         ]
     },
