@@ -4,9 +4,11 @@ from os.path import abspath, join, dirname
 import urllib.request
 from shutil import copyfile
 
+baseUrl = 'https://laravel-livewire.com/docs/'
+
 # Create a request with a valid User-Agent
 req = urllib.request.Request(
-    'https://livewire-framework.com/docs/quickstart',
+    baseUrl,
     data=None,
     headers={
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) ' +
@@ -17,14 +19,17 @@ req = urllib.request.Request(
 
 # Pull the html from the main docs page and find all /docs links
 docs = urllib.request.urlopen(req)
-links = re.findall('href="(/docs/.*?)"', docs.read().decode('utf-8'))
+links = re.findall('href="('+baseUrl+'.*?)"', docs.read().decode('utf-8'))
 found = []
 pages = []
 
+
 # Compile all the info for the pages
 for url in sorted(set(links)):
-    topic = url.split('/')[2].title().replace('-', ' ').split('#')[0]
-    slug = url.split('/')[2].split('#')[0]
+    url = url.replace(baseUrl, '')
+
+    topic = url.title().replace('-', ' ').split('#')[0]
+    slug = url.split('#')[0]
 
     if (topic not in found):
         found.append(topic)
