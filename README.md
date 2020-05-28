@@ -6,10 +6,8 @@ Easily access Livewire framework documentation pages from within VSCode
 
 To use this extension, simply use `⌘ + Shift + P` to open the command palette (`Ctrl` on windows / linux) and search for "Livewire Docs". You can also search for just "Docs" or the specific topic you're after, like "Data Binding"
 
-
-Here's an example:    
+Here's an example:  
 ![Extension Preview](img/preview.gif)
-
 
 ## Development
 
@@ -18,9 +16,3 @@ The files for this extension are generated from the python script `build/build.p
 ```
     python3 build.py
 ```
-
-## Release Notes
-
-### 1.0.0
-
-First stable release, as of livewire version `~0.2.*`

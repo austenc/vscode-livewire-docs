@@ -69,7 +69,7 @@ with open(join(abspath(dirname(__file__)), '../src/extension.ts'), 'w+') as f:
             'vscode.commands.registerCommand('
             + "'extension." + page['command'] + "', () => {\n"
             + "        vscode.commands.executeCommand('vscode.open', "
-            + "vscode.Uri.parse('https://livewire-framework.com/docs/" + page['slug']
+            + "vscode.Uri.parse('" + baseUrl + page['slug']
             + "'));\n"
             + "    });\n"
             + "    context.subscriptions.push(" + page['command'] + ");\n"
