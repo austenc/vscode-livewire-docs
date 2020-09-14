@@ -14,5 +14,5 @@ Here's an example:
 The files for this extension are generated from the python script `build/build.py`. Run this command to rebuild all extension files:
 
 ```
-    python3 build.py
+    python3 build/build.py
 ```
