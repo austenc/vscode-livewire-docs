@@ -15,13 +15,15 @@
     "activationEvents": [
         "onCommand:extension.livewireDocsActions",
         "onCommand:extension.livewireDocsAlpineJs",
-        "onCommand:extension.livewireDocsApi",
         "onCommand:extension.livewireDocsArtisanCommands",
         "onCommand:extension.livewireDocsAuthorization",
         "onCommand:extension.livewireDocsDeferLoading",
         "onCommand:extension.livewireDocsDirtyStates",
         "onCommand:extension.livewireDocsEvents",
+        "onCommand:extension.livewireDocsFileDownloads",
+        "onCommand:extension.livewireDocsFileUploads",
         "onCommand:extension.livewireDocsFlashMessages",
+        "onCommand:extension.livewireDocsInlineScripts",
         "onCommand:extension.livewireDocsInputValidation",
         "onCommand:extension.livewireDocsInstallation",
         "onCommand:extension.livewireDocsLaravelEcho",
@@ -35,13 +37,14 @@
         "onCommand:extension.livewireDocsPolling",
         "onCommand:extension.livewireDocsPrefetching",
         "onCommand:extension.livewireDocsProperties",
+        "onCommand:extension.livewireDocsQueryString",
         "onCommand:extension.livewireDocsQuickstart",
         "onCommand:extension.livewireDocsRedirecting",
+        "onCommand:extension.livewireDocsReference",
         "onCommand:extension.livewireDocsRenderingComponents",
-        "onCommand:extension.livewireDocsSecurity",
         "onCommand:extension.livewireDocsTesting",
         "onCommand:extension.livewireDocsTroubleshooting",
-        "onCommand:extension.livewireDocsTurbolinks"
+        "onCommand:extension.livewireDocsUpgrading"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -55,11 +58,6 @@
                 "command": "extension.livewireDocsAlpineJs",
                 "category": "Livewire Docs",
                 "title": "Alpine Js"
-            },
-            {
-                "command": "extension.livewireDocsApi",
-                "category": "Livewire Docs",
-                "title": "Api"
             },
             {
                 "command": "extension.livewireDocsArtisanCommands",
@@ -87,9 +85,24 @@
                 "title": "Events"
             },
             {
+                "command": "extension.livewireDocsFileDownloads",
+                "category": "Livewire Docs",
+                "title": "File Downloads"
+            },
+            {
+                "command": "extension.livewireDocsFileUploads",
+                "category": "Livewire Docs",
+                "title": "File Uploads"
+            },
+            {
                 "command": "extension.livewireDocsFlashMessages",
                 "category": "Livewire Docs",
                 "title": "Flash Messages"
+            },
+            {
+                "command": "extension.livewireDocsInlineScripts",
+                "category": "Livewire Docs",
+                "title": "Inline Scripts"
             },
             {
                 "command": "extension.livewireDocsInputValidation",
@@ -157,6 +170,11 @@
                 "title": "Properties"
             },
             {
+                "command": "extension.livewireDocsQueryString",
+                "category": "Livewire Docs",
+                "title": "Query String"
+            },
+            {
                 "command": "extension.livewireDocsQuickstart",
                 "category": "Livewire Docs",
                 "title": "Quickstart"
@@ -167,14 +185,14 @@
                 "title": "Redirecting"
             },
             {
+                "command": "extension.livewireDocsReference",
+                "category": "Livewire Docs",
+                "title": "Reference"
+            },
+            {
                 "command": "extension.livewireDocsRenderingComponents",
                 "category": "Livewire Docs",
                 "title": "Rendering Components"
-            },
-            {
-                "command": "extension.livewireDocsSecurity",
-                "category": "Livewire Docs",
-                "title": "Security"
             },
             {
                 "command": "extension.livewireDocsTesting",
@@ -187,9 +205,9 @@
                 "title": "Troubleshooting"
             },
             {
-                "command": "extension.livewireDocsTurbolinks",
+                "command": "extension.livewireDocsUpgrading",
                 "category": "Livewire Docs",
-                "title": "Turbolinks"
+                "title": "Upgrading"
             }
         ]
     },

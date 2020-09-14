@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 2.0.0
+
+- Support Livewire v2 links
+
 ## 1.1.1
 
 - Fixed URL to point to correct livewire domain

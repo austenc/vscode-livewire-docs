@@ -11,10 +11,6 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/alpine-js'));
     });
     context.subscriptions.push(livewireDocsAlpineJs);
-    let livewireDocsApi = vscode.commands.registerCommand('extension.livewireDocsApi', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/api'));
-    });
-    context.subscriptions.push(livewireDocsApi);
     let livewireDocsArtisanCommands = vscode.commands.registerCommand('extension.livewireDocsArtisanCommands', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/artisan-commands'));
     });
@@ -35,10 +31,22 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/events'));
     });
     context.subscriptions.push(livewireDocsEvents);
+    let livewireDocsFileDownloads = vscode.commands.registerCommand('extension.livewireDocsFileDownloads', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/file-downloads'));
+    });
+    context.subscriptions.push(livewireDocsFileDownloads);
+    let livewireDocsFileUploads = vscode.commands.registerCommand('extension.livewireDocsFileUploads', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/file-uploads'));
+    });
+    context.subscriptions.push(livewireDocsFileUploads);
     let livewireDocsFlashMessages = vscode.commands.registerCommand('extension.livewireDocsFlashMessages', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/flash-messages'));
     });
     context.subscriptions.push(livewireDocsFlashMessages);
+    let livewireDocsInlineScripts = vscode.commands.registerCommand('extension.livewireDocsInlineScripts', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/inline-scripts'));
+    });
+    context.subscriptions.push(livewireDocsInlineScripts);
     let livewireDocsInputValidation = vscode.commands.registerCommand('extension.livewireDocsInputValidation', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/input-validation'));
     });
@@ -91,6 +99,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/properties'));
     });
     context.subscriptions.push(livewireDocsProperties);
+    let livewireDocsQueryString = vscode.commands.registerCommand('extension.livewireDocsQueryString', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/query-string'));
+    });
+    context.subscriptions.push(livewireDocsQueryString);
     let livewireDocsQuickstart = vscode.commands.registerCommand('extension.livewireDocsQuickstart', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/quickstart'));
     });
@@ -99,14 +111,14 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/redirecting'));
     });
     context.subscriptions.push(livewireDocsRedirecting);
+    let livewireDocsReference = vscode.commands.registerCommand('extension.livewireDocsReference', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/reference'));
+    });
+    context.subscriptions.push(livewireDocsReference);
     let livewireDocsRenderingComponents = vscode.commands.registerCommand('extension.livewireDocsRenderingComponents', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/rendering-components'));
     });
     context.subscriptions.push(livewireDocsRenderingComponents);
-    let livewireDocsSecurity = vscode.commands.registerCommand('extension.livewireDocsSecurity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/security'));
-    });
-    context.subscriptions.push(livewireDocsSecurity);
     let livewireDocsTesting = vscode.commands.registerCommand('extension.livewireDocsTesting', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/testing'));
     });
@@ -115,9 +127,9 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/troubleshooting'));
     });
     context.subscriptions.push(livewireDocsTroubleshooting);
-    let livewireDocsTurbolinks = vscode.commands.registerCommand('extension.livewireDocsTurbolinks', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/turbolinks'));
+    let livewireDocsUpgrading = vscode.commands.registerCommand('extension.livewireDocsUpgrading', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/upgrading'));
     });
-    context.subscriptions.push(livewireDocsTurbolinks);
+    context.subscriptions.push(livewireDocsUpgrading);
 
 }

@@ -1,6 +1,6 @@
 # VSCode Livewire Docs
 
-Easily access Livewire framework documentation pages from within VSCode
+Easily access Laravel Livewire documentation pages from within VSCode
 
 ## Features
 
