@@ -42,7 +42,9 @@
         "onCommand:extension.livewireDocsRedirecting",
         "onCommand:extension.livewireDocsReference",
         "onCommand:extension.livewireDocsRenderingComponents",
+        "onCommand:extension.livewireDocsSecurity",
         "onCommand:extension.livewireDocsTesting",
+        "onCommand:extension.livewireDocsTraits",
         "onCommand:extension.livewireDocsTroubleshooting",
         "onCommand:extension.livewireDocsUpgrading"
     ],
@@ -195,9 +197,19 @@
                 "title": "Rendering Components"
             },
             {
+                "command": "extension.livewireDocsSecurity",
+                "category": "Livewire Docs",
+                "title": "Security"
+            },
+            {
                 "command": "extension.livewireDocsTesting",
                 "category": "Livewire Docs",
                 "title": "Testing"
+            },
+            {
+                "command": "extension.livewireDocsTraits",
+                "category": "Livewire Docs",
+                "title": "Traits"
             },
             {
                 "command": "extension.livewireDocsTroubleshooting",
