@@ -17,7 +17,9 @@
         "onCommand:extension.livewireDocsAlpineJs",
         "onCommand:extension.livewireDocsArtisanCommands",
         "onCommand:extension.livewireDocsAuthorization",
+        "onCommand:extension.livewireDocsContributionGuide",
         "onCommand:extension.livewireDocsDeferLoading",
+        "onCommand:extension.livewireDocsDeployment",
         "onCommand:extension.livewireDocsDirtyStates",
         "onCommand:extension.livewireDocsEvents",
         "onCommand:extension.livewireDocsFileDownloads",
@@ -72,9 +74,19 @@
                 "title": "Authorization"
             },
             {
+                "command": "extension.livewireDocsContributionGuide",
+                "category": "Livewire Docs",
+                "title": "Contribution Guide"
+            },
+            {
                 "command": "extension.livewireDocsDeferLoading",
                 "category": "Livewire Docs",
                 "title": "Defer Loading"
+            },
+            {
+                "command": "extension.livewireDocsDeployment",
+                "category": "Livewire Docs",
+                "title": "Deployment"
             },
             {
                 "command": "extension.livewireDocsDirtyStates",

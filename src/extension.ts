@@ -19,10 +19,18 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/authorization'));
     });
     context.subscriptions.push(livewireDocsAuthorization);
+    let livewireDocsContributionGuide = vscode.commands.registerCommand('extension.livewireDocsContributionGuide', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/contribution-guide'));
+    });
+    context.subscriptions.push(livewireDocsContributionGuide);
     let livewireDocsDeferLoading = vscode.commands.registerCommand('extension.livewireDocsDeferLoading', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/defer-loading'));
     });
     context.subscriptions.push(livewireDocsDeferLoading);
+    let livewireDocsDeployment = vscode.commands.registerCommand('extension.livewireDocsDeployment', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/deployment'));
+    });
+    context.subscriptions.push(livewireDocsDeployment);
     let livewireDocsDirtyStates = vscode.commands.registerCommand('extension.livewireDocsDirtyStates', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://laravel-livewire.com/docs/dirty-states'));
     });
