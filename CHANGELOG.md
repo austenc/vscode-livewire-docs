@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-## 2.1.0
+## 2.2.0
 - Added new documentation sections
 
 ## 2.0.0
