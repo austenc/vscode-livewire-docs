@@ -2,7 +2,7 @@
     "name": "livewire-docs",
     "displayName": "Livewire Docs",
     "description": "Easily access the Livewire Laravel documentation",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "icon": "img/icon.png",
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-livewire-docs",
