@@ -14,7 +14,7 @@ Here's an example:
 To use a specific version of the Livewire documentation, use this configuration option:
 
 ```
-"livewireDocs.version": 2.x
+"livewireDocs.version": "2.x"
 ```
 
 **Note:** After modifying the `livewireDocs.version` configuration, you need to *restart Visual Studio Code* for the changes to take effect.

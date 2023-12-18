@@ -6,6 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 2.3.0
+- Support Livewire v3 documentation
+
 ## 2.2.0
 - Added new documentation sections
 
