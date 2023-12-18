@@ -7,7 +7,7 @@
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-livewire-docs",
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.56.0"
     },
     "categories": [
         "Other"
@@ -52,6 +52,21 @@
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Livewire Docs Configuration",
+            "properties": {
+                "livewireDocs.version": {
+                    "type": [
+                        "number",
+                        "string",
+                        "null"
+                    ],
+                    "default": "",
+                    "description": "Specify the version of the Livewire docs to use."
+                }
+            }
+        },
         "commands": [
             {
                 "command": "extension.livewireDocsActions",
@@ -239,13 +254,12 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.10.11",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.37"
+        "@types/mocha": "^2.2.48",
+        "@types/node": "^7.10.14",
+        "@types/vscode": "^1.56.0",
+        "typescript": "^4.2.4"
     }
 }
