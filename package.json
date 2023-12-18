@@ -7,231 +7,597 @@
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-livewire-docs",
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.56.0"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.livewireDocsActions",
-        "onCommand:extension.livewireDocsAlpineJs",
-        "onCommand:extension.livewireDocsArtisanCommands",
-        "onCommand:extension.livewireDocsAuthorization",
-        "onCommand:extension.livewireDocsContributionGuide",
-        "onCommand:extension.livewireDocsDeferLoading",
-        "onCommand:extension.livewireDocsDeployment",
-        "onCommand:extension.livewireDocsDirtyStates",
-        "onCommand:extension.livewireDocsEvents",
-        "onCommand:extension.livewireDocsFileDownloads",
-        "onCommand:extension.livewireDocsFileUploads",
-        "onCommand:extension.livewireDocsFlashMessages",
-        "onCommand:extension.livewireDocsInlineScripts",
-        "onCommand:extension.livewireDocsInputValidation",
-        "onCommand:extension.livewireDocsInstallation",
-        "onCommand:extension.livewireDocsLaravelEcho",
-        "onCommand:extension.livewireDocsLifecycleHooks",
-        "onCommand:extension.livewireDocsLoadingStates",
-        "onCommand:extension.livewireDocsMakingComponents",
-        "onCommand:extension.livewireDocsNestingComponents",
-        "onCommand:extension.livewireDocsOfflineState",
-        "onCommand:extension.livewireDocsPackageDev",
-        "onCommand:extension.livewireDocsPagination",
-        "onCommand:extension.livewireDocsPolling",
-        "onCommand:extension.livewireDocsPrefetching",
-        "onCommand:extension.livewireDocsProperties",
-        "onCommand:extension.livewireDocsQueryString",
-        "onCommand:extension.livewireDocsQuickstart",
-        "onCommand:extension.livewireDocsRedirecting",
-        "onCommand:extension.livewireDocsReference",
-        "onCommand:extension.livewireDocsRenderingComponents",
-        "onCommand:extension.livewireDocsSecurity",
-        "onCommand:extension.livewireDocsTesting",
-        "onCommand:extension.livewireDocsTraits",
-        "onCommand:extension.livewireDocsTroubleshooting",
-        "onCommand:extension.livewireDocsUpgrading"
+        "onCommand:extension.livewireDocsV2Actions",
+        "onCommand:extension.livewireDocsV2AlpineJs",
+        "onCommand:extension.livewireDocsV2ArtisanCommands",
+        "onCommand:extension.livewireDocsV2Authorization",
+        "onCommand:extension.livewireDocsV2ContributionGuide",
+        "onCommand:extension.livewireDocsV2DeferLoading",
+        "onCommand:extension.livewireDocsV2Deployment",
+        "onCommand:extension.livewireDocsV2DirtyStates",
+        "onCommand:extension.livewireDocsV2Events",
+        "onCommand:extension.livewireDocsV2FileDownloads",
+        "onCommand:extension.livewireDocsV2FileUploads",
+        "onCommand:extension.livewireDocsV2FlashMessages",
+        "onCommand:extension.livewireDocsV2InlineScripts",
+        "onCommand:extension.livewireDocsV2InputValidation",
+        "onCommand:extension.livewireDocsV2Installation",
+        "onCommand:extension.livewireDocsV2LaravelEcho",
+        "onCommand:extension.livewireDocsV2LifecycleHooks",
+        "onCommand:extension.livewireDocsV2LoadingStates",
+        "onCommand:extension.livewireDocsV2MakingComponents",
+        "onCommand:extension.livewireDocsV2NestingComponents",
+        "onCommand:extension.livewireDocsV2OfflineState",
+        "onCommand:extension.livewireDocsV2PackageDev",
+        "onCommand:extension.livewireDocsV2Pagination",
+        "onCommand:extension.livewireDocsV2Polling",
+        "onCommand:extension.livewireDocsV2Prefetching",
+        "onCommand:extension.livewireDocsV2Properties",
+        "onCommand:extension.livewireDocsV2QueryString",
+        "onCommand:extension.livewireDocsV2Quickstart",
+        "onCommand:extension.livewireDocsV2Redirecting",
+        "onCommand:extension.livewireDocsV2Reference",
+        "onCommand:extension.livewireDocsV2RenderingComponents",
+        "onCommand:extension.livewireDocsV2Security",
+        "onCommand:extension.livewireDocsV2Testing",
+        "onCommand:extension.livewireDocsV2Traits",
+        "onCommand:extension.livewireDocsV2Troubleshooting",
+        "onCommand:extension.livewireDocsV2Upgrading",
+        "onCommand:extension.livewireDocsV3Actions",
+        "onCommand:extension.livewireDocsV3Alpine",
+        "onCommand:extension.livewireDocsV3Components",
+        "onCommand:extension.livewireDocsV3ComputedProperties",
+        "onCommand:extension.livewireDocsV3ContributionGuide",
+        "onCommand:extension.livewireDocsV3Downloads",
+        "onCommand:extension.livewireDocsV3Events",
+        "onCommand:extension.livewireDocsV3Forms",
+        "onCommand:extension.livewireDocsV3Hydration",
+        "onCommand:extension.livewireDocsV3Installation",
+        "onCommand:extension.livewireDocsV3Javascript",
+        "onCommand:extension.livewireDocsV3Lazy",
+        "onCommand:extension.livewireDocsV3LifecycleHooks",
+        "onCommand:extension.livewireDocsV3Locked",
+        "onCommand:extension.livewireDocsV3Morphing",
+        "onCommand:extension.livewireDocsV3Navigate",
+        "onCommand:extension.livewireDocsV3Nesting",
+        "onCommand:extension.livewireDocsV3Offline",
+        "onCommand:extension.livewireDocsV3Pagination",
+        "onCommand:extension.livewireDocsV3Properties",
+        "onCommand:extension.livewireDocsV3Quickstart",
+        "onCommand:extension.livewireDocsV3Redirecting",
+        "onCommand:extension.livewireDocsV3Security",
+        "onCommand:extension.livewireDocsV3Synthesizers",
+        "onCommand:extension.livewireDocsV3Teleport",
+        "onCommand:extension.livewireDocsV3Testing",
+        "onCommand:extension.livewireDocsV3UnderstandingNesting",
+        "onCommand:extension.livewireDocsV3Upgrading",
+        "onCommand:extension.livewireDocsV3Uploads",
+        "onCommand:extension.livewireDocsV3Url",
+        "onCommand:extension.livewireDocsV3Validation",
+        "onCommand:extension.livewireDocsV3Volt",
+        "onCommand:extension.livewireDocsV3WireClick",
+        "onCommand:extension.livewireDocsV3WireConfirm",
+        "onCommand:extension.livewireDocsV3WireDirty",
+        "onCommand:extension.livewireDocsV3WireIgnore",
+        "onCommand:extension.livewireDocsV3WireInit",
+        "onCommand:extension.livewireDocsV3WireLoading",
+        "onCommand:extension.livewireDocsV3WireModel",
+        "onCommand:extension.livewireDocsV3WireNavigate",
+        "onCommand:extension.livewireDocsV3WireOffline",
+        "onCommand:extension.livewireDocsV3WirePoll",
+        "onCommand:extension.livewireDocsV3WireStream",
+        "onCommand:extension.livewireDocsV3WireSubmit",
+        "onCommand:extension.livewireDocsV3WireTransition"
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Livewire Docs",
+            "properties": {
+                "livewireDocs.version": {
+                    "type": [
+                        "number",
+                        "string",
+                        "null"
+                    ],
+                    "default": "",
+                    "description": "Specify the version of the Livewire docs to use."
+                }
+            }
+        },
         "commands": [
             {
-                "command": "extension.livewireDocsActions",
+                "command": "extension.livewireDocsV2Actions",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Actions"
+            },
+            {
+                "command": "extension.livewireDocsV2AlpineJs",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Alpine Js"
+            },
+            {
+                "command": "extension.livewireDocsV2ArtisanCommands",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Artisan Commands"
+            },
+            {
+                "command": "extension.livewireDocsV2Authorization",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Authorization"
+            },
+            {
+                "command": "extension.livewireDocsV2ContributionGuide",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Contribution Guide"
+            },
+            {
+                "command": "extension.livewireDocsV2DeferLoading",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Defer Loading"
+            },
+            {
+                "command": "extension.livewireDocsV2Deployment",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Deployment"
+            },
+            {
+                "command": "extension.livewireDocsV2DirtyStates",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Dirty States"
+            },
+            {
+                "command": "extension.livewireDocsV2Events",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Events"
+            },
+            {
+                "command": "extension.livewireDocsV2FileDownloads",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "File Downloads"
+            },
+            {
+                "command": "extension.livewireDocsV2FileUploads",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "File Uploads"
+            },
+            {
+                "command": "extension.livewireDocsV2FlashMessages",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Flash Messages"
+            },
+            {
+                "command": "extension.livewireDocsV2InlineScripts",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Inline Scripts"
+            },
+            {
+                "command": "extension.livewireDocsV2InputValidation",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Input Validation"
+            },
+            {
+                "command": "extension.livewireDocsV2Installation",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Installation"
+            },
+            {
+                "command": "extension.livewireDocsV2LaravelEcho",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Laravel Echo"
+            },
+            {
+                "command": "extension.livewireDocsV2LifecycleHooks",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Lifecycle Hooks"
+            },
+            {
+                "command": "extension.livewireDocsV2LoadingStates",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Loading States"
+            },
+            {
+                "command": "extension.livewireDocsV2MakingComponents",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Making Components"
+            },
+            {
+                "command": "extension.livewireDocsV2NestingComponents",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Nesting Components"
+            },
+            {
+                "command": "extension.livewireDocsV2OfflineState",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Offline State"
+            },
+            {
+                "command": "extension.livewireDocsV2PackageDev",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Package Dev"
+            },
+            {
+                "command": "extension.livewireDocsV2Pagination",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Pagination"
+            },
+            {
+                "command": "extension.livewireDocsV2Polling",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Polling"
+            },
+            {
+                "command": "extension.livewireDocsV2Prefetching",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Prefetching"
+            },
+            {
+                "command": "extension.livewireDocsV2Properties",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Properties"
+            },
+            {
+                "command": "extension.livewireDocsV2QueryString",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Query String"
+            },
+            {
+                "command": "extension.livewireDocsV2Quickstart",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Quickstart"
+            },
+            {
+                "command": "extension.livewireDocsV2Redirecting",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Redirecting"
+            },
+            {
+                "command": "extension.livewireDocsV2Reference",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Reference"
+            },
+            {
+                "command": "extension.livewireDocsV2RenderingComponents",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Rendering Components"
+            },
+            {
+                "command": "extension.livewireDocsV2Security",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Security"
+            },
+            {
+                "command": "extension.livewireDocsV2Testing",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Testing"
+            },
+            {
+                "command": "extension.livewireDocsV2Traits",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Traits"
+            },
+            {
+                "command": "extension.livewireDocsV2Troubleshooting",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Troubleshooting"
+            },
+            {
+                "command": "extension.livewireDocsV2Upgrading",
+                "category": "Livewire Docs",
+                "enablement": "configuration.livewireDocs.version == '2.x' || configuration.livewireDocs.version == 2",
+                "title": "Upgrading"
+            },
+            {
+                "command": "extension.livewireDocsV3Actions",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Actions"
             },
             {
-                "command": "extension.livewireDocsAlpineJs",
+                "command": "extension.livewireDocsV3Alpine",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Alpine Js"
+                "title": "Alpine"
             },
             {
-                "command": "extension.livewireDocsArtisanCommands",
+                "command": "extension.livewireDocsV3Components",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Artisan Commands"
+                "title": "Components"
             },
             {
-                "command": "extension.livewireDocsAuthorization",
+                "command": "extension.livewireDocsV3ComputedProperties",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Authorization"
+                "title": "Computed Properties"
             },
             {
-                "command": "extension.livewireDocsContributionGuide",
+                "command": "extension.livewireDocsV3ContributionGuide",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Contribution Guide"
             },
             {
-                "command": "extension.livewireDocsDeferLoading",
+                "command": "extension.livewireDocsV3Downloads",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Defer Loading"
+                "title": "Downloads"
             },
             {
-                "command": "extension.livewireDocsDeployment",
-                "category": "Livewire Docs",
-                "title": "Deployment"
-            },
-            {
-                "command": "extension.livewireDocsDirtyStates",
-                "category": "Livewire Docs",
-                "title": "Dirty States"
-            },
-            {
-                "command": "extension.livewireDocsEvents",
+                "command": "extension.livewireDocsV3Events",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Events"
             },
             {
-                "command": "extension.livewireDocsFileDownloads",
+                "command": "extension.livewireDocsV3Forms",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "File Downloads"
+                "title": "Forms"
             },
             {
-                "command": "extension.livewireDocsFileUploads",
+                "command": "extension.livewireDocsV3Hydration",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "File Uploads"
+                "title": "Hydration"
             },
             {
-                "command": "extension.livewireDocsFlashMessages",
-                "category": "Livewire Docs",
-                "title": "Flash Messages"
-            },
-            {
-                "command": "extension.livewireDocsInlineScripts",
-                "category": "Livewire Docs",
-                "title": "Inline Scripts"
-            },
-            {
-                "command": "extension.livewireDocsInputValidation",
-                "category": "Livewire Docs",
-                "title": "Input Validation"
-            },
-            {
-                "command": "extension.livewireDocsInstallation",
+                "command": "extension.livewireDocsV3Installation",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Installation"
             },
             {
-                "command": "extension.livewireDocsLaravelEcho",
+                "command": "extension.livewireDocsV3Javascript",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Laravel Echo"
+                "title": "Javascript"
             },
             {
-                "command": "extension.livewireDocsLifecycleHooks",
+                "command": "extension.livewireDocsV3Lazy",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Lazy"
+            },
+            {
+                "command": "extension.livewireDocsV3LifecycleHooks",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Lifecycle Hooks"
             },
             {
-                "command": "extension.livewireDocsLoadingStates",
+                "command": "extension.livewireDocsV3Locked",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Loading States"
+                "title": "Locked"
             },
             {
-                "command": "extension.livewireDocsMakingComponents",
+                "command": "extension.livewireDocsV3Morphing",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Making Components"
+                "title": "Morphing"
             },
             {
-                "command": "extension.livewireDocsNestingComponents",
+                "command": "extension.livewireDocsV3Navigate",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Nesting Components"
+                "title": "Navigate"
             },
             {
-                "command": "extension.livewireDocsOfflineState",
+                "command": "extension.livewireDocsV3Nesting",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Offline State"
+                "title": "Nesting"
             },
             {
-                "command": "extension.livewireDocsPackageDev",
+                "command": "extension.livewireDocsV3Offline",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Package Dev"
+                "title": "Offline"
             },
             {
-                "command": "extension.livewireDocsPagination",
+                "command": "extension.livewireDocsV3Pagination",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Pagination"
             },
             {
-                "command": "extension.livewireDocsPolling",
-                "category": "Livewire Docs",
-                "title": "Polling"
-            },
-            {
-                "command": "extension.livewireDocsPrefetching",
-                "category": "Livewire Docs",
-                "title": "Prefetching"
-            },
-            {
-                "command": "extension.livewireDocsProperties",
+                "command": "extension.livewireDocsV3Properties",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Properties"
             },
             {
-                "command": "extension.livewireDocsQueryString",
-                "category": "Livewire Docs",
-                "title": "Query String"
-            },
-            {
-                "command": "extension.livewireDocsQuickstart",
+                "command": "extension.livewireDocsV3Quickstart",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Quickstart"
             },
             {
-                "command": "extension.livewireDocsRedirecting",
+                "command": "extension.livewireDocsV3Redirecting",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Redirecting"
             },
             {
-                "command": "extension.livewireDocsReference",
-                "category": "Livewire Docs",
-                "title": "Reference"
-            },
-            {
-                "command": "extension.livewireDocsRenderingComponents",
-                "category": "Livewire Docs",
-                "title": "Rendering Components"
-            },
-            {
-                "command": "extension.livewireDocsSecurity",
+                "command": "extension.livewireDocsV3Security",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Security"
             },
             {
-                "command": "extension.livewireDocsTesting",
+                "command": "extension.livewireDocsV3Synthesizers",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Synthesizers"
+            },
+            {
+                "command": "extension.livewireDocsV3Teleport",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Teleport"
+            },
+            {
+                "command": "extension.livewireDocsV3Testing",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Testing"
             },
             {
-                "command": "extension.livewireDocsTraits",
+                "command": "extension.livewireDocsV3UnderstandingNesting",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
-                "title": "Traits"
+                "title": "Understanding Nesting"
             },
             {
-                "command": "extension.livewireDocsTroubleshooting",
-                "category": "Livewire Docs",
-                "title": "Troubleshooting"
-            },
-            {
-                "command": "extension.livewireDocsUpgrading",
+                "command": "extension.livewireDocsV3Upgrading",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
                 "category": "Livewire Docs",
                 "title": "Upgrading"
+            },
+            {
+                "command": "extension.livewireDocsV3Uploads",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Uploads"
+            },
+            {
+                "command": "extension.livewireDocsV3Url",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Url"
+            },
+            {
+                "command": "extension.livewireDocsV3Validation",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Validation"
+            },
+            {
+                "command": "extension.livewireDocsV3Volt",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Volt"
+            },
+            {
+                "command": "extension.livewireDocsV3WireClick",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Click"
+            },
+            {
+                "command": "extension.livewireDocsV3WireConfirm",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Confirm"
+            },
+            {
+                "command": "extension.livewireDocsV3WireDirty",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Dirty"
+            },
+            {
+                "command": "extension.livewireDocsV3WireIgnore",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Ignore"
+            },
+            {
+                "command": "extension.livewireDocsV3WireInit",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Init"
+            },
+            {
+                "command": "extension.livewireDocsV3WireLoading",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Loading"
+            },
+            {
+                "command": "extension.livewireDocsV3WireModel",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Model"
+            },
+            {
+                "command": "extension.livewireDocsV3WireNavigate",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Navigate"
+            },
+            {
+                "command": "extension.livewireDocsV3WireOffline",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Offline"
+            },
+            {
+                "command": "extension.livewireDocsV3WirePoll",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Poll"
+            },
+            {
+                "command": "extension.livewireDocsV3WireStream",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Stream"
+            },
+            {
+                "command": "extension.livewireDocsV3WireSubmit",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Submit"
+            },
+            {
+                "command": "extension.livewireDocsV3WireTransition",
+                "enablement": "configuration.livewireDocs.version != '2.x' || configuration.livewireDocs.version != 2",
+                "category": "Livewire Docs",
+                "title": "Wire Transition"
             }
         ]
     },
@@ -239,13 +605,12 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.10.11",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.37"
+        "@types/mocha": "^2.2.48",
+        "@types/node": "^7.10.14",
+        "@types/vscode": "^1.56.0",
+        "typescript": "^4.2.4"
     }
 }
